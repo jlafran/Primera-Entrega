@@ -4,7 +4,7 @@ Para correr el backend se hace con el comando: npm run index
 
 Para hace los request son:
 
-* Productos:
+* ### Productos:
     * GetAll: http://localhost:8080/productos/
     * GetById:  http://localhost:8080/api/productos/:id
     * DeleteById: http://localhost:8080/productos/:id
@@ -16,7 +16,7 @@ Para hace los request son:
             }
     * Post: http://localhost:8080/productos/ y alli metemos un Json producto
     
-* Carrito:
+* ### Carrito:
     * PostProduct:  http://localhost:8080/carritos/:id/productos  en los params mandamos el id del carrito y en el body enviamos el id del producto que queremos importar, 
         * ej : { "id":9 }
     * PostCarrito:  http://localhost:8080/carritos/   Nos crea el carrito vacio
