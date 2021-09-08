@@ -22,9 +22,9 @@
   },
   {
     "id": 0,
-    "productos": {
-      "carrito": [
-        {
+    "productos": [
+      {
+
           "id": 2,
           "producto": {
             "title": "Naranja",
@@ -48,7 +48,6 @@
             "url": "https://i.imgur.com/X99fUfw.jpg"
           }
         }
-      ]
-    }
+    ]
   }
 ]
