@@ -18,7 +18,7 @@ const newCarrito=()=>{
     })
     carrits.push({
         id: id=id+1,
-        productos: [{}]
+        productos: []
     })
     return carritos.writeCarrito(carrits)
 }
@@ -33,9 +33,7 @@ const AddProduct=(productoid,id)=>{
         carrits=carrits.filter((carrits)=> id!= carrits.id)
         carrits.push({
             id: id,
-            productos: {
-                carrito
-            }
+            productos: carrito
         })
         return carritos.writeCarrito(carrits)
     }
@@ -65,17 +63,13 @@ const deleteProductoOnCarrito=(id,productoid)=>{
     console.log(carrits);
     carrits.push({
         id: id,
-        productos: {
-            carrito
-        }
+        productos: carrito
     })
     return carritos.writeCarrito(carrits)
 }
 const deleteProduct=(carrito,productoid)=>{
-    carrito= carrito.productos
-    console.log(carrito);
-    carrito.productos=carrito.productos.filter((producto)=> productoid== producto.id)
-    return carrito
+    carrito=carrito.productos
+    return carrito.filter((producto)=> productoid!= producto.id)
 }
 export default {
     getAll:getAll,
